@@ -1,0 +1,71 @@
+\question{Question 1}
+
+This is an example question in which we use exemplify with calculus of variations.
+\footnote{Remark that this is just an example of common operations you find in this type of problem}
+
+Consider the $S[y] = \int_a^b dx F(x, y, \dot{y})$, where $\dot{y} = y^{\prime} = \Dd{y}{x}$, as seen in Brunt's book
+\cite{bruntVariations}, show that the Euler-Lagrange equations are:
+
+%
+% The asterisk at the end of the word equations
+% are to not enumerate the equation.
+%
+\begin{equation*}
+\Dd{}{x}\Dp{F}{y^\prime} - \Dp{F}{y} = 0
+\end{equation*}
+
+\begin{solution}[Example Question]
+Using the Gateaux derivative (not \emph{gâteau}, that is french for cake) on $S$, we can write
+
+\begin{equation}
+\label{Q1:eq1}
+\left.
+\Dd{}{\varepsilon} S[y + \varepsilon h] \right|_{\epsilon = 0}
+= 
+\left.
+\Dd{}{\varepsilon} \int_a^b dx F(x, y + \varepsilon h, y^\prime + \epsilon h^\prime) \right|_{\epsilon = 0}
+\end{equation}
+
+Did you really believe I'd show the whole thing? This is just an example.
+
+As seen in \ref{Q1:eq1} the bar for evaluation looks as big as the derivative operator or integral sign. That is because we are properly telling \LaTeX, where the evaluation symbol will be applied. \LaTeX doesn't care about the meaning of that, but if we keep our semantics right, we'll get good results on the output.
+
+Now you want to write the $O$ term, you could do it with $\mathcal{O}$ or just with $O$ as $\mathcal{O}(\epsilon^2)$, this is a common situation.
+
+
+Maybe you need to write the \emph{then} which would be $\implies$, or the arrow for limits $\to$.
+
+For example, if $f: \mathbb{R} \to \mathbb{R}$ is a continuous, then $\lim_{x \to a} f(x) = f(a)$.
+
+Another interesting use case is trying to keep equations aligned.
+
+\begin{align*}
+    x^2 + 2px + q &= x^2 + 2p x + q + 0 \\
+    &= x^2 + 2p x + q + (p^2 - p^2) \\
+    &= x^2 + 2p x + p^2  + (q - p^2) \\
+    &= (x + p)^2 + (q - p^2) \\
+    &= (x + p)^2 + (q - p^2)
+\end{align*}
+
+And with this we see a simple manipulation of completing the squre in which you have all the equations aligned by the equal sign.
+
+More over, you could do two columns
+\footnote{For this example, I had no idea what to use, so I used a simple sum}
+
+\begin{align*}
+    1 + 1 + 1 &= 1 + (1 + 1)
+    &
+    2 + 2+ 2 &= 2 + (2 + 2) \\
+    &= 1 + 2
+    &
+    &= 2 + 4 \\
+    &= 3 
+    &
+    &=6
+\end{align*}
+
+In this case, as you can see, the text went over one page, which is fine. But without this paragraph, the black square that states the end of the solution will be on the next page by itself.
+
+If you know how to fix it, let me know.
+
+\end{solution}

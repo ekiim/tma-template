@@ -1,0 +1,41 @@
+This is an example of a question that uses more Number Theory type of objects.
+
+For example, without using the solution environment, I'll be showing the congruence, which can be written as $\bmod$, observe how this previous one doesn't introduce a white space before the \emph{mod} word, but this one $\mod$ does. Here we use a lot of the symbol for congruence, $\equiv$, which are three lines.
+
+Another thing we use is the sum over divisors as $\sum_{d | n} a(d)$, or we use \emph{many conditions} in the summation index as $\sum_{ \substack{\text { prime } p \leq x \\ p \equiv 3(\bmod 10)} } \frac{1}{p}$, now If you notice, I'll continue this paragraph with no meaning just to exhibit how the summation, as big as it is, still respects line. This is because we are using display mode for the equations everywhere. I find that more comfortable, but it might not be convenient in any document.
+
+Now, if we want to write a continuous fraction, we must go through the pain of writing everything manually.
+
+$$
+\frac{1}{1 + \frac{1}{1 + \frac{1}{2}}}
+$$
+
+But it looks nice, good luck with that.
+
+Now for a table you can use the regular \LaTeX env for it
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cccccccc} \toprule
+    {$m$} & {$\Re\{\underline{\mathfrak{X}}(m)\}$} & {$-\Im\{\underline{\mathfrak{X}}(m)\}$} & {$\mathfrak{X}(m)$} & {$\frac{\mathfrak{X}(m)}{23}$} & {$A_m$} & {$\varphi(m)\ /\ ^{\circ}$} & {$\varphi_m\ /\ ^{\circ}$} \\ \midrule
+    1  & 16.128 & +8.872 & 16.128 & 1.402 & 1.373 & -146.6 & -137.6 \\
+    2  & 3.442  & -2.509 & 3.442  & 0.299 & 0.343 & 133.2  & 152.4  \\
+    3  & 1.826  & -0.363 & 1.826  & 0.159 & 0.119 & 168.5  & -161.1 \\
+    4  & 0.993  & -0.429 & 0.993  & 0.086 & 0.08  & 25.6   & 90     \\ \midrule
+    5  & 1.29   & +0.099 & 1.29   & 0.112 & 0.097 & -175.6 & -114.7 \\
+    6  & 0.483  & -0.183 & 0.483  & 0.042 & 0.063 & 22.3   & 122.5  \\
+    7  & 0.766  & -0.475 & 0.766  & 0.067 & 0.039 & 141.6  & -122   \\
+    8  & 0.624  & +0.365 & 0.624  & 0.054 & 0.04  & -35.7  & 90     \\ \midrule
+    9  & 0.641  & -0.466 & 0.641  & 0.056 & 0.045 & 133.3  & -106.3 \\
+    10 & 0.45   & +0.421 & 0.45   & 0.039 & 0.034 & -69.4  & 110.9  \\
+    11 & 0.598  & -0.597 & 0.598  & 0.052 & 0.025 & 92.3   & -109.3 \\ \bottomrule
+\end{tabular}
+\caption{
+I stole this table from StackExchange\protect\footnotemark
+}
+\end{table}
+
+\footnotetext{The URL for that is \url{https://tex.stackexchange.com/a/112382}}
+
+Maybe it's also worth using the symbol for Asymptotically equal $f(x) \sim g(x)$.

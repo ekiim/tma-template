@@ -1,0 +1,38 @@
+\documentclass{TMA}
+\addbibresource{bibliography.bib}
+
+% All the following definitions are required.
+\def \myName {John Doe}
+\def \myStudentID {98712344}
+\def \myEmail {john.doe@example.com}
+\def \mySchool {
+The University Name- 
+The School Name
+}
+\def \myCourse {
+M000 The Course Name
+}
+\def \myTMANumber {1}
+
+\begin{document}
+
+% I'll name this text the preface, in which you can
+% specify stuff about the document.
+%
+% In this example it's a generic text talking about wht
+% this document is.
+
+This document includes my solution proposal and comments for exercises included in the Tutor Marked Assignment \myTMANumber\ for the course \myCourse.
+
+% This creates an index right after the preface.
+\tableofcontents
+
+%
+% In this section include as many extra files as you need.
+% The general idea is to work on each question (or even question
+% section as Q1-a, Q2-a, Q2-b), on it's own file.
+%
+\include{questions/Q1.tex}
+\include{questions/Q2.tex}
+
+\end{document}
